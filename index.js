@@ -80,3 +80,36 @@ const value2 = '5';
 
 console.log(value1 == value2);
 console.log(value1 === value2);
+
+/**
+ * Front End Interview Questions: map() vs filter() vs reduce()
+ *
+ * Q: What do map(), filter() and reduce() do?
+ */
+
+const nums = [1, 2, 3, 4, 5];
+
+const numsAddOne = nums.map((value) => value + 1);
+console.log(numsAddOne);
+
+const evenNums = nums.filter((value) => value % 2 === 0);
+console.log(evenNums);
+console.log(nums);
+
+const sum = nums.reduce((total, current) => {
+  return total + current;
+}, 0);
+
+console.log(sum);
+
+const numsAddOneEvens = nums.reduce((acc, current) => {
+  current = current + 1;
+
+  if (current % 2 === 0) {
+    acc.push(current);
+  }
+
+  return acc;
+}, []);
+
+console.log(numsAddOneEvens);

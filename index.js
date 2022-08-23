@@ -128,3 +128,12 @@ const user2 = {};
 
 console.log(user.firstName);
 console.log(user2.firstName);
+
+/**
+ * Front End Interview Questions: Data Types
+ *
+ * Q: What are some JavaScript data types?
+ */
+
+// boolean, strings, numbers, BigInt, Symbol
+// [], {}, Map, Set

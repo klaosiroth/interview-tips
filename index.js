@@ -201,3 +201,11 @@ const { f: firstName, l: lastName } = user;
  *
  * Bonus Resource: https://scrumguides.org/
  */
+
+/**
+ * Front End Interview Questions: Number Issues
+ *
+ * Q: What are some issues with numbers in JavaScript you may have to protect against?
+ */
+
+console.log(0.2 + 0.1);

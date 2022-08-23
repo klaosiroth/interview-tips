@@ -209,3 +209,45 @@ const { f: firstName, l: lastName } = user;
  */
 
 console.log(0.2 + 0.1);
+
+/**
+ * Front End Interview Questions: Promises
+ *
+ * Q: What are Promises and why might you use them?
+ *
+ * Bonus Resource: https://jsonplaceholder.typicode.com/
+ */
+
+// function getPost() {
+//   console.log(1);
+
+//   fetch('https://jsonplaceholder.typicode.com/posts/1')
+//     .then((data) => data.json())
+//     .then((json) => console.log(2))
+//     .catch((error) => console.log(e));
+
+//   console.log(3);
+// }
+
+// getPost();
+
+async function getPost() {
+  console.log(1);
+
+  try {
+    const response = await fetch('https://jsonplaceholder.typicode.com/posts/1');
+    const json = await response.json();
+    console.log(json);
+  } catch (e) {
+    console.log(e);
+  }
+
+  // fetch('https://jsonplaceholder.typicode.com/posts/1')
+  // .then((data) => data.json())
+  // .then((json) => console.log(2))
+  // .catch((error) =>  console.log(e));
+
+  console.log(3);
+}
+
+getPost();

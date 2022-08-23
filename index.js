@@ -68,3 +68,15 @@ const user = {
 // PI = 3.145;
 console.log(PI);
 user.firstName = 'Dylan';
+
+/**
+ * Front End Interview Questions: == vs ===
+ *
+ * Q: How does == vs === differ?
+ */
+
+const value1 = 5;
+const value2 = '5';
+
+console.log(value1 == value2);
+console.log(value1 === value2);
